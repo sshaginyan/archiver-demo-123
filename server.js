@@ -9,7 +9,7 @@ const client = new Client({
 
 client.connect();
 
-client.query('SELECT salesforce.shadow_connect_data(account)')
+client.query('SELECT salesforce.shadow_connect_data(salesforce.account)')
   .then(() => console.log('success'))
   .catch(error => console.error(error.message))
   .finally(() => client.end());
