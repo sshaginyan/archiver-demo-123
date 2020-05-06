@@ -7,6 +7,8 @@ const client = new Client({
   connection: process.env.DATABASE_URL
 });
 
+console.log('Starting');
+
 client.connect();
 
 client.query('SELECT salesforce.transfer()')
