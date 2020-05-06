@@ -7,11 +7,9 @@ const client = new Client({
   connection: process.env.DATABASE_URL
 });
 
-console.log('Starting');
-
 client.connect();
 
-client.query('SELECT salesforce.transfer()')
-  .then(() => console.log('success'))
+client.query('SELECT salesforce.shadow_connect_data(account)')
+  .Then(() => console.log('success'))
   .catch(error => console.error(error.message))
   .finally(() => client.end());
