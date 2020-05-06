@@ -14,4 +14,4 @@ client.connect();
 client.query('SELECT salesforce.transfer()')
   .then(() => console.log('success'))
   .catch(error => console.error(error.message))
-  .finaly(() => client.end());
+  .finally(() => client.end());
