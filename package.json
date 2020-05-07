@@ -2,14 +2,22 @@
   "name": "archiver-demo-123",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sshaginyan/archiver-demo-123.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sshaginyan/archiver-demo-123/issues"
+  },
+  "homepage": "https://github.com/sshaginyan/archiver-demo-123#readme",
   "dependencies": {
-    "faker": "^4.1.0",
     "pg": "^8.0.3"
   }
 }
